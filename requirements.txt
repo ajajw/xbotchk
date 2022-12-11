@@ -1,0 +1,9 @@
+pyrogram
+python-dotenv
+TgCrypto
+requests
+asyncio
+psutil
+psycopg2-binary
+random-user-agent
+sqlalchemy<=1.3.23

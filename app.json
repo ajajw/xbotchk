@@ -1,0 +1,48 @@
+{
+  "name": "XCARDING",
+  "description": "Open-source bot to play music in group calls. Powered by https://github.com/pytgcalls/pytgcalls.",
+  "keywords": ["bot", "carding", "telegram"],
+  "repository": "https://github.com/ximfine/XMusic",
+  "stack": "container",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "A bot token from @BotFather.",
+      "required": true
+    },
+    "API_ID": {
+      "description": "An app ID from https://my.telegram.org/apps.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "An app hash from https://my.telegram.org/apps.",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "List of user IDs counted as admin everywhere (separated by space).",
+      "required": true
+    },
+    "OWN_ID": {
+    "description": "List of user IDs counted as admin everywhere (separated by space).",
+    "required": true
+    },
+    "DATABASE_URL": {
+    "description": "Postgresql database url.",
+    "required": true
+    }
+  },
+    "addons": [
+        {
+            "plan": "heroku-postgresql",
+            "options": {
+                "version": "13"
+            }
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
+  
